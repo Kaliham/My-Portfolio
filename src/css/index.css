@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100;200;300;400;500&family=Press+Start+2P&display=swap");
+*,
+body {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	font-family: "Noto Sans Display", sans-serif;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box;
+	/* width: 100vw; */
+}
+section {
+	/* height: 100vh; */
+	width: 100%;
+	display: block;
+	background-color: white;
+	position: relative;
+	padding: 10px;
+}

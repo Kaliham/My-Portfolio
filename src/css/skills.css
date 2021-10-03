@@ -1,0 +1,40 @@
+#skills-title {
+	color: rgb(109, 109, 109);
+
+	margin: 1em 0em 2em;
+	font-weight: 200;
+	font-family: "Press Start 2P", sans-serif;
+}
+
+.skill-logo {
+	display: block;
+	width: 100%;
+	position: relative;
+}
+.skill-title {
+	font-size: 1em;
+	font-family: "Press Start 2P", sans-serif;
+	text-align: center;
+}
+.skills-container {
+	list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	/* flex-grow: 3; */
+	flex-basis: 3;
+}
+.skill-container {
+	flex: 1;
+	max-width: 100px;
+	min-width: 100px;
+	background-color: white;
+	margin: 0.4em;
+	color: #3f3f74;
+	padding: 0.3em;
+	border-radius: 20%;
+}
+.skill-container:hover {
+	box-shadow: 2px 2px 2px #3f3f749a;
+	background-color: black;
+}
