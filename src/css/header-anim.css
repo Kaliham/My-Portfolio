@@ -1,3 +1,7 @@
+:root {
+	--typewriterSpeed: 100s;
+	--typewriterCharacters: 12;
+}
 #title-title,
 #title-name,
 #title-description {
@@ -28,9 +32,23 @@
 	z-index: 10;
 	color: azure;
 	text-align: center;
-	top: 10vh;
+	top: 0vh;
+	padding-top: 10vh;
 	font-size: 3rem;
 	background-color: #11052dbb;
+}
+#blinking {
+	position: relative;
+	display: inline-block;
+	height: 1em;
+	width: 0.2em;
+	background-color: #c81b46;
+	-webkit-animation: typewriter var(--typewriterSpeed)
+			steps(var(--typewriterCharacters)) 1s forwards,
+		blink 750ms steps(var(--typewriterCharacters)) infinite;
+	animation: typewriter var(--typewriterSpeed)
+			steps(var(--typewriterCharacters)) 1s forwards,
+		blink 750ms steps(var(--typewriterCharacters)) infinite;
 }
 
 #title-description {
@@ -121,5 +139,29 @@
 	}
 	#title-title {
 		font-size: 0.6em;
+	}
+}
+
+@-webkit-keyframes typewriter {
+	to {
+		left: 100%;
+	}
+}
+
+@keyframes typewriter {
+	to {
+		left: 100%;
+	}
+}
+
+@-webkit-keyframes blink {
+	to {
+		background: transparent;
+	}
+}
+
+@keyframes blink {
+	to {
+		background: transparent;
 	}
 }
