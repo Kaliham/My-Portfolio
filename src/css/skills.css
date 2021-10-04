@@ -21,18 +21,18 @@
 	list-style: none;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: start;
 	/* flex-grow: 3; */
 	flex-basis: 3;
 }
 .skill-container {
 	flex: 1;
-	max-width: 100px;
-	min-width: 100px;
+	max-width: 140px;
+	min-width: 140px;
 	background-color: white;
-	margin: 0.4em;
+	margin: 1em;
 	color: #3f3f74;
-	padding: 0.3em;
+	padding: 1em;
 	border-radius: 20%;
 }
 .skill-container:hover {
