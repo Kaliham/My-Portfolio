@@ -24,6 +24,7 @@
 	justify-content: start;
 	/* flex-grow: 3; */
 	flex-basis: 3;
+	flex: 3;
 }
 .skill-container {
 	flex: 1;
@@ -43,4 +44,45 @@
 	.skill-container {
 		min-width: 90px;
 	}
+}
+.skill-info-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+#info-skill {
+	flex: 1;
+	min-width: 300px;
+	max-width: 300px;
+	background-image: url("../res/screen.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 2.3em 1em;
+	height: 500px;
+}
+#skill-info {
+	font-weight: 200;
+	font-family: "Press Start 2P", sans-serif;
+	font-size: 0.85em;
+	letter-spacing: 0.1em;
+	line-height: 1.8;
+	color: rgb(78, 222, 70);
+	text-shadow: 2px 2px 6px rgba(13, 255, 0, 0.42);
+	height: 420px;
+	overflow-y: scroll;
+}
+#blinking-skill-info {
+	position: relative;
+	display: inline-block;
+	height: 1em;
+	width: 0.2em;
+	background-color: #c81b46;
+	-webkit-animation: typewriter var(--typewriterSpeed)
+			steps(var(--typewriterCharacters)) 1s forwards,
+		blink 750ms steps(var(--typewriterCharacters)) infinite;
+	animation: typewriter var(--typewriterSpeed)
+			steps(var(--typewriterCharacters)) 1s forwards,
+		blink 750ms steps(var(--typewriterCharacters)) infinite;
+
+	background-color: rgb(78, 222, 70);
 }
