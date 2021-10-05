@@ -37,5 +37,10 @@
 }
 .skill-container:hover {
 	box-shadow: 2px 2px 2px #3f3f749a;
-	background-color: black;
+	background-color: rgb(227, 227, 227);
+}
+@media screen and (max-width: 410px) {
+	.skill-container {
+		min-width: 90px;
+	}
 }

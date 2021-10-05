@@ -130,6 +130,7 @@
 		font-size: 0.7em;
 	}
 }
+
 @media screen and (max-width: 340px) {
 	#title-name {
 		font-size: 0.8em;
