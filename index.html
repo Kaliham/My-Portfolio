@@ -26,9 +26,12 @@
 					><img src="res/Logo.png" alt="" class="logo"
 				/></a>
 				<ul class="normal-list">
-					<li><a href="#aboutme">About Me</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#projects">Projects</a></li>
+					<li>
+						<a href="#aboutme">About Me</a>
+						<span>|</span>
+					</li>
+					<li><a href="#skills">Skills</a><span>|</span></li>
+					<li><a href="#projects">Projects</a><span>|</span></li>
 					<li><a href="#contactme">Contact Me</a></li>
 				</ul>
 				<div class="menu-btn">
@@ -37,7 +40,9 @@
 			</nav>
 		</header>
 		<ul class="hamburger-list">
-			<li><a class="toggle-open" href="#aboutme">About Me</a></li>
+			<li>
+				<a class="toggle-open" href="#aboutme">About Me</a>
+			</li>
 			<li><a class="toggle-open" href="#skills">Skills</a></li>
 			<li><a class="toggle-open" href="#projects">Projects</a></li>
 			<li><a class="toggle-open" href="#contactme">Contact Me</a></li>
@@ -81,85 +86,91 @@
 				opportunities is learning and growth.
 				<br />
 				<br />
-				Fun facts about me: I enjoy drawing pixel art for fun (I might not be
-				good at it), I drew all the pixel art in this website! The pixel art
-				above in the header is my setup at home.
 			</p>
+
 			<br id="skills" />
 
 			<h2 id="skills-title">Skills</h2>
-			<ul class="skills-container">
-				<li class="skill-container">
-					<img src="res/logos/spring.png" alt="spring" class="skill-logo" />
-					<h3 class="skill-title">Spring Boot</h3>
-				</li>
-				<li class="skill-container">
-					<img src="res/logos/Java.png" alt="Java" class="skill-logo" />
-					<h3 class="skill-title">Java</h3>
-				</li>
-				<li class="skill-container">
-					<img src="res/logos/nodejs.png" alt="Nodejs" class="skill-logo" />
-					<h3 class="skill-title">Nodejs</h3>
-				</li>
-				<li class="skill-container">
-					<img src="res/logos/csharp.png" alt="C#" class="skill-logo" />
-					<h3 class="skill-title">C#</h3>
-				</li>
-				<li class="skill-container">
-					<img src="res/logos/database.png" alt="MySQL" class="skill-logo" />
-					<h3 class="skill-title">MySQL</h3>
-				</li>
-				<li class="skill-container">
-					<img
-						src="res/logos/database.png"
-						alt="PostgreSQL"
-						class="skill-logo"
-					/>
-					<h3 class="skill-title">Postgre SQL</h3>
-				</li>
-				<li class="skill-container">
-					<img src="res/logos/aws.png" alt="AWS" class="skill-logo" />
-					<h3 class="skill-title">AWS</h3>
-				</li>
-				<li class="skill-container">
-					<img src="res/logos/Git.png" alt="Git" class="skill-logo" />
-					<h3 class="skill-title">Git</h3>
-				</li>
-				<li class="skill-container">
-					<img src="res/logos/JS.png" alt="JS" class="skill-logo" />
-					<h3 class="skill-title">JS</h3>
-				</li>
-				<li class="skill-container">
-					<img src="res/logos/Dart.png" alt="Dart" class="skill-logo" />
-					<h3 class="skill-title">Dart</h3>
-				</li>
-				<li class="skill-container">
-					<img src="res/logos/flutter.png" alt="Flutter" class="skill-logo" />
-					<h3 class="skill-title">Flutter</h3>
-				</li>
-				<li class="skill-container">
-					<img src="res/logos/mongoDB.png" alt="mongoDB" class="skill-logo" />
-					<h3 class="skill-title">mongoDB</h3>
-				</li>
-				<li class="skill-container">
-					<img
-						src="res/logos/unixshell.png"
-						alt="Unix Shell"
-						class="skill-logo"
-					/>
-					<h3 class="skill-title">Unix Shell</h3>
-				</li>
-				<li class="skill-container">
-					<img src="res/logos/unixshell.png" alt="ZSH" class="skill-logo" />
-					<h3 class="skill-title">ZSH</h3>
-				</li>
-				<li class="skill-container">
-					<img src="res/logos/unixshell.png" alt="vim" class="skill-logo" />
-					<h3 class="skill-title">vim</h3>
-				</li>
-			</ul>
+			<div class="skill-info-container">
+				<ul class="skills-container">
+					<li class="skill-container" data-index="0">
+						<img src="res/logos/spring.png" alt="spring" class="skill-logo" />
+						<h3 class="skill-title">Spring Boot</h3>
+					</li>
+					<li class="skill-container" data-index="1">
+						<img src="res/logos/Java.png" alt="Java" class="skill-logo" />
+						<h3 class="skill-title">Java</h3>
+					</li>
+					<li class="skill-container" data-index="2">
+						<img src="res/logos/nodejs.png" alt="Nodejs" class="skill-logo" />
+						<h3 class="skill-title">Nodejs</h3>
+					</li>
+					<li class="skill-container" data-index="3">
+						<img src="res/logos/csharp.png" alt="C#" class="skill-logo" />
+						<h3 class="skill-title">C#</h3>
+					</li>
+					<li class="skill-container" data-index="4">
+						<img src="res/logos/database.png" alt="MySQL" class="skill-logo" />
+						<h3 class="skill-title">MySQL</h3>
+					</li>
+					<li class="skill-container" data-index="5">
+						<img
+							src="res/logos/database.png"
+							alt="PostgreSQL"
+							class="skill-logo"
+						/>
+						<h3 class="skill-title">Postgre SQL</h3>
+					</li>
+					<li class="skill-container" data-index="6">
+						<img src="res/logos/aws.png" alt="AWS" class="skill-logo" />
+						<h3 class="skill-title">AWS</h3>
+					</li>
+					<li class="skill-container" data-index="7">
+						<img src="res/logos/Git.png" alt="Git" class="skill-logo" />
+						<h3 class="skill-title">Git</h3>
+					</li>
+					<li class="skill-container" data-index="8">
+						<img src="res/logos/JS.png" alt="JS" class="skill-logo" />
+						<h3 class="skill-title">JS</h3>
+					</li>
+					<li class="skill-container" data-index="9">
+						<img src="res/logos/Dart.png" alt="Dart" class="skill-logo" />
+						<h3 class="skill-title">Dart</h3>
+					</li>
+					<li class="skill-container" data-index="10">
+						<img src="res/logos/flutter.png" alt="Flutter" class="skill-logo" />
+						<h3 class="skill-title">Flutter</h3>
+					</li>
+					<li class="skill-container" data-index="11">
+						<img src="res/logos/mongoDB.png" alt="mongoDB" class="skill-logo" />
+						<h3 class="skill-title">mongoDB</h3>
+					</li>
+					<li class="skill-container" data-index="12">
+						<img
+							src="res/logos/unixshell.png"
+							alt="Unix Shell"
+							class="skill-logo"
+						/>
+						<h3 class="skill-title">Unix Shell</h3>
+					</li>
+					<li class="skill-container" data-index="13">
+						<img src="res/logos/unixshell.png" alt="ZSH" class="skill-logo" />
+						<h3 class="skill-title">ZSH</h3>
+					</li>
+					<li class="skill-container" data-index="14">
+						<img src="res/logos/unixshell.png" alt="vim" class="skill-logo" />
+						<h3 class="skill-title">vim</h3>
+					</li>
+				</ul>
+				<div id="info-skill">
+					<p id="skill-info">
+						Click the icons of A skill to continue...<span
+							id="blinking-skill-info"
+						></span>
+					</p>
+				</div>
+			</div>
 			<br />
-			<h2 id="skills-title">Fun facts About me!</h2>
 			<p>
 				<br />
 			</p>
@@ -167,6 +178,17 @@
 		<section id="projects">
 			<h1 class="section-title">Projects</h1>
 		</section>
+
+		<section id="contactme">
+			<h1 id="about-title" class="section-title">Contact Me</h1>
+			<h2 id="skills-title">contact info</h2>
+			<div class="send-email-container">
+				<form action="" method="post"></form>
+			</div>
+		</section>
+		<section id="funfacts"></section>
+		<footer></footer>
+
 		<script src="script/burger.js"></script>
 	</body>
 </html>
