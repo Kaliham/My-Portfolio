@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="css/header-anim.css" />
 		<link rel="stylesheet" href="css/about.css" />
 		<link rel="stylesheet" href="css/skills.css" />
+		<link rel="stylesheet" href="css/hamburger.css" />
 		<script
 			language="JavaScript"
 			type="text/javascript"
@@ -19,6 +20,28 @@
 		<script src="script/typewriter.js"></script>
 	</head>
 	<body>
+		<header class="header">
+			<nav class="nav-bar">
+				<a href="#" class="scroll-reset"
+					><img src="res/Logo.png" alt="" class="logo"
+				/></a>
+				<ul class="normal-list">
+					<li><a href="#aboutme">About Me</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contactme">Contact Me</a></li>
+				</ul>
+				<div class="menu-btn">
+					<div class="menu-btn-burger"></div>
+				</div>
+			</nav>
+		</header>
+		<ul class="hamburger-list">
+			<li><a class="toggle-open" href="#aboutme">About Me</a></li>
+			<li><a class="toggle-open" href="#skills">Skills</a></li>
+			<li><a class="toggle-open" href="#projects">Projects</a></li>
+			<li><a class="toggle-open" href="#contactme">Contact Me</a></li>
+		</ul>
 		<div id="intro-container">
 			<!-- <div id="block"></div> -->
 			<div id="setup-img-container">
@@ -40,15 +63,30 @@
 			</article>
 		</div>
 
-		<section>
-			<h1 id="about-title">About Me</h1>
+		<section id="aboutme">
+			<h1 id="about-title" class="section-title">About Me</h1>
 			<p id="about-description">
-				I am Omar Taher, Computer Science graduate Interested in Software
+				Hey, I am Omar Taher, Computer Science graduate Interested in Software
 				Engineering, Software Architecture, Design Patterns, Backend/FullStack
-				Development, and Microservices. Looking for opportunities to build
-				Impactful software.
+				Development, Mobile Development, and Microservices. Looking for
+				opportunities to build Impactful software with a team passionate about
+				software, and working on software with clean well-thought out
+				processes.<br /><br />
+				I have experience interning at <b>Amazon</b>, <b>PwC</b>, and
+				<b>EHS.com.jo</b> . These amazing experiences helped me improve my
+				technical, and soft skills, and working on real software gave me a
+				robust foundation in software development. Keeping an Eye on trendy and
+				new cutting edge technologies, while still focusing on reliable and
+				clean software. The thing I keep my eye on the most while looking for
+				opportunities is learning and growth.
+				<br />
+				<br />
+				Fun facts about me: I enjoy drawing pixel art for fun (I might not be
+				good at it), I drew all the pixel art in this website! The pixel art
+				above in the header is my setup at home.
 			</p>
-			<br />
+			<br id="skills" />
+
 			<h2 id="skills-title">Skills</h2>
 			<ul class="skills-container">
 				<li class="skill-container">
@@ -120,6 +158,15 @@
 					<h3 class="skill-title">vim</h3>
 				</li>
 			</ul>
+			<br />
+			<h2 id="skills-title">Fun facts About me!</h2>
+			<p>
+				<br />
+			</p>
 		</section>
+		<section id="projects">
+			<h1 class="section-title">Projects</h1>
+		</section>
+		<script src="script/burger.js"></script>
 	</body>
 </html>

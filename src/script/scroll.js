@@ -10,7 +10,6 @@ let nameSpeed;
 let titleSpeed;
 let initDone;
 let init = () => {
-	console.log("init..");
 	nameEl = document.getElementById("title-name");
 	titleEl = document.getElementById("title-title");
 	descriptionEl = document.getElementById("title-description");
@@ -46,7 +45,11 @@ $(window).scroll(function () {
 });
 let changeOpacity = (percentage, element) => {
 	element.style.opacity = percentage;
-	console.log(percentage);
+	if (percentage < 0.05) {
+		element.style.display = "none";
+	} else {
+		element.style.display = "block";
+	}
 };
 let nameScroll = (scrollPos) => {
 	horizontalScroll(scrollPos, nameSpeed, nameEl);
@@ -60,39 +63,7 @@ let horizontalScroll = (scrollPos, speed, element) => {
 let verticalScroll = (scrollPos, speed, element) => {
 	element.style.transform = `translateY(${scrollPos * speed}px)`;
 };
-// $(window).on("resize", calculate());
-// $(window).on("load", calculate());
-
-// function calculate() {
-// 	var scroll = $(window).scrollTop();
-// 	console.log("scrol:" + scroll);
-// 	var img = document.getElementById("setup-img");
-// 	var imgContainer = document.getElementById("setup-img-container");
-// 	var imgWidth = img.clientWidth;
-// 	var imgHeight = img.clientHeight;
-// 	var percentage = scroll / window.outerHeight;
-// 	var percentageInverse = window.innerHeight / scroll;
-// 	console.log(percentage);
-// 	let InvPercentage = max(1 - percentage, 0);
-// 	$("#setup-img").css({
-// 		height: 100 * (1 + InvPercentage * 2) + "vh",
-// 		left: "0px",
-// 		right: "0px",
-// 		top: 0,
-// 	});
-// 	if (percentage > 1) {
-// 		$("#setup-img").css({
-// 			top: 0 - (percentage - 1) * 100 + "vh",
-// 		});
-// 	} else {
-// 		imgContainer.style.position = "fixed";
-// 		console.log(" fixed");
-// 	}
-// 	$("#setup-img-container").css({
-// 		bottom: 0 + 170 * InvPercentage + "vh",
-// 	});
-
-// }
+//helper functions
 let max = (x, y) => {
 	return x < y ? y : x;
 };
