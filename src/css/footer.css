@@ -1,0 +1,34 @@
+footer {
+	background-color: #11052d;
+	color: white;
+}
+.footer-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.footer-container > li {
+	display: block;
+	flex: 1;
+	padding: 1em;
+}
+
+.footer-text {
+	font-family: "Press Start 2P", sans-serif;
+	font-size: small;
+}
+.footer-email-container {
+	display: flex;
+	flex-direction: row;
+}
+#email-input {
+	display: inline;
+	width: 100%;
+	max-width: 350px;
+	margin: 1em;
+	padding: 0.2em;
+}
+.email-send-button {
+	display: inline;
+	padding: 0.2em;
+}
