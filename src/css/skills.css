@@ -1,10 +1,10 @@
-#skills-title {
+/* #skills-title {
 	color: rgb(109, 109, 109);
 
-	margin: 1em 0em 2em;
+	margin: 1em 1.2em 2em;
 	font-weight: 200;
 	font-family: "Press Start 2P", sans-serif;
-}
+} */
 
 .skill-logo {
 	display: block;
@@ -49,6 +49,8 @@
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	margin: 0;
+	padding: 0;
 }
 #info-skill {
 	flex: 1;
@@ -59,8 +61,11 @@
 	background-size: contain;
 	padding: 2.3em 1em;
 	height: 500px;
+
+	align-self: flex-start;
 }
 #skill-info {
+	display: block;
 	font-weight: 200;
 	font-family: "Press Start 2P", sans-serif;
 	font-size: 0.85em;
@@ -70,6 +75,8 @@
 	text-shadow: 2px 2px 6px rgba(13, 255, 0, 0.42);
 	height: 420px;
 	overflow-y: scroll;
+	overflow-x: hidden;
+	text-align: start;
 }
 #blinking-skill-info {
 	position: relative;
@@ -85,4 +92,7 @@
 		blink 750ms steps(var(--typewriterCharacters)) infinite;
 
 	background-color: rgb(78, 222, 70);
+}
+
+@media screen and (max-width: 340px) {
 }

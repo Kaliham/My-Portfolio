@@ -21,14 +21,68 @@ footer {
 	display: flex;
 	flex-direction: row;
 }
+#email-to {
+	color: white;
+	font-size: small;
+	font-family: "Press Start 2P", sans-serif;
+}
 #email-input {
-	display: inline;
-	width: 100%;
-	max-width: 350px;
+	display: block;
+	flex: 6;
+
 	margin: 1em;
 	padding: 0.2em;
+	border: none;
+	background-color: #23114d;
+	color: white;
+	height: 2em;
 }
+#email-input:focus {
+	border: none;
+	outline: none;
+}
+#email-input::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: rgb(216, 247, 226);
+	opacity: 1; /* Firefox */
+}
+
+#email-input:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: rgb(216, 247, 226);
+}
+
+#email-input::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: rgb(216, 247, 226);
+}
+
 .email-send-button {
+	margin: 1em;
+	flex: 1;
 	display: inline;
-	padding: 0.2em;
+	padding: 0.4em 0.5em;
+	background-color: #23114d;
+	border: none;
+	color: white;
+	margin-left: 0;
+}
+.email-container {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	max-width: 400px;
+}
+
+@media screen and (max-width: 450px) {
+	#email-to {
+		font-size: x-small;
+	}
+}
+.footer-container > li {
+	flex: 2;
+}
+#footer-watermark {
+	flex: 1;
+	text-align: end;
 }
