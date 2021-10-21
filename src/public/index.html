@@ -16,6 +16,7 @@
 		<link rel="stylesheet" href="css/footer.css" />
 		<link rel="stylesheet" href="css/contactme.css" />
 		<link rel="stylesheet" href="css/projects.css" />
+		<link rel="stylesheet" href="css/snackbar.css" />
 		<script
 			language="JavaScript"
 			type="text/javascript"
@@ -68,6 +69,8 @@
 				<a
 					class="btn"
 					href="res/Resume.pdf"
+					target="_blank"
+					rel="noopener noreferrer"
 					download="Omar Taher Ibrahim - Resume.pdf"
 				>
 					<i class="fa fa-download"></i> Download Resume
@@ -101,6 +104,8 @@
 				<a
 					class="btn"
 					href="res/Resume.pdf"
+					target="_blank"
+					rel="noopener noreferrer"
 					download="Omar Taher Ibrahim - Resume.pdf"
 				>
 					<i class="fa fa-download"></i> Download Resume
@@ -229,6 +234,7 @@
 						type="email"
 						name="email"
 						placeholder="Enter your Email!"
+						id="full-email-email"
 					/>
 					<h3 class="pixel">Subject:</h3>
 
@@ -237,6 +243,7 @@
 						type="text"
 						name="email"
 						placeholder="Enter Subject Of Email!"
+						id="full-email-subject"
 					/>
 					<h3 id="body-header" class="pixel">Body:</h3>
 					<br />
@@ -262,19 +269,21 @@
 		<footer>
 			<ul class="footer-container">
 				<li>
-					<h3 class="footer-text">Email: <br /></h3>
-					<p id="email-to">OmarTaherIbrahim@gmail.com</p>
+					<h3 class="footer-text">
+						<i class="far fa-envelope"></i> Email: <br />
+					</h3>
+					<p id="email-to-p">OmarTaherIbrahim@gmail.com</p>
 				</li>
 				<li class="footer-email-container">
-					<h3 class="footer-text">Quick Email:</h3>
+					<h3 class="footer-text">Send a quick email:</h3>
 					<div class="email-container">
 						<input
 							type="email"
 							name="email"
-							id="email-input"
+							id="quick-email-input"
 							placeholder="Enter Email to setup!"
 						/>
-						<button class="email-send-button">
+						<button class="email-send-button" id="quick-email-btn">
 							<i class="fas fa-paper-plane"></i>
 						</button>
 					</div>
@@ -285,7 +294,9 @@
 				</li>
 			</ul>
 		</footer>
-
+		<!-- The actual snackbar -->
+		<div id="snackbar">Some text some message..</div>
 		<script src="script/burger.js"></script>
+		<script src="script/email.js"></script>
 	</body>
 </html>
