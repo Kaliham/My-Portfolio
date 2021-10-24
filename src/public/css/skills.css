@@ -1,0 +1,98 @@
+/* #skills-title {
+	color: rgb(109, 109, 109);
+
+	margin: 1em 1.2em 2em;
+	font-weight: 200;
+	font-family: "Press Start 2P", sans-serif;
+} */
+
+.skill-logo {
+	display: block;
+	width: 100%;
+	position: relative;
+}
+.skill-title {
+	font-size: 1em;
+	font-family: "Press Start 2P", sans-serif;
+	text-align: center;
+	padding-top: 0.3em;
+}
+.skills-container {
+	list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: start;
+	/* flex-grow: 3; */
+	flex-basis: 3;
+	flex: 3;
+}
+.skill-container {
+	flex: 1;
+	max-width: 140px;
+	min-width: 140px;
+	background-color: white;
+	margin: 1em;
+	color: #3f3f74;
+	padding: 1em;
+	border-radius: 20%;
+}
+.skill-container:hover {
+	box-shadow: 2px 2px 2px #3f3f749a;
+	background-color: rgb(227, 227, 227);
+}
+@media screen and (max-width: 410px) {
+	.skill-container {
+		min-width: 90px;
+	}
+}
+.skill-info-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin: 0;
+	padding: 0;
+}
+#info-skill {
+	flex: 1;
+	min-width: 300px;
+	max-width: 300px;
+	background-image: url("../res/screen.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 2.3em 1em;
+	height: 500px;
+
+	align-self: flex-start;
+}
+#skill-info {
+	display: block;
+	font-weight: 200;
+	font-family: "Press Start 2P", sans-serif;
+	font-size: 0.85em;
+	letter-spacing: 0.1em;
+	line-height: 1.8;
+	color: rgb(78, 222, 70);
+	text-shadow: 2px 2px 6px rgba(13, 255, 0, 0.42);
+	height: 420px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	text-align: start;
+}
+#blinking-skill-info {
+	position: relative;
+	display: inline-block;
+	height: 1em;
+	width: 0.2em;
+	background-color: #c81b46;
+	-webkit-animation: typewriter var(--typewriterSpeed)
+			steps(var(--typewriterCharacters)) 1s forwards,
+		blink 750ms steps(var(--typewriterCharacters)) infinite;
+	animation: typewriter var(--typewriterSpeed)
+			steps(var(--typewriterCharacters)) 1s forwards,
+		blink 750ms steps(var(--typewriterCharacters)) infinite;
+
+	background-color: rgb(78, 222, 70);
+}
+
+@media screen and (max-width: 340px) {
+}

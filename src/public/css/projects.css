@@ -1,0 +1,25 @@
+#projects {
+	background-color: #222034;
+}
+.under-const-h3 {
+	font-family: "Press Start 2P", sans-serif;
+	color: #feae34;
+}
+.under-const-img {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	margin: 2em;
+}
+a > .under-const-h3 {
+	color: #fff;
+	text-decoration: none;
+}
+.under-const-a {
+	text-decoration: none;
+}
+.under-const-additional {
+	background-color: #feae34;
+	padding: 1em;
+	align-items: center;
+}
