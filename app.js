@@ -50,7 +50,7 @@ server.get("/*", (req, res) => {
 	res.sendFile(__dirname + "/public/index.html");
 });
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 server.listen(port, function () {
 	console.log("server listening on port " + port);
 });
