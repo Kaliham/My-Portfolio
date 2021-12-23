@@ -1,0 +1,146 @@
+#send-email-container {
+	display: flex;
+	justify-content: center;
+	padding: 2em;
+	width: 100%;
+}
+
+#send-email-box {
+	display: flex;
+	flex-direction: column;
+	background-image: url("../res/email-screen.png");
+	width: 640px;
+	height: 480px;
+	image-rendering: crisp-edges;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding: 2em;
+	font-family: "Press Start 2P", sans-serif;
+}
+
+.contactme-input-fields {
+	width: 90%;
+	margin: 1em;
+	padding: 1em;
+	font-size: small;
+	display: inline-block;
+	border: none;
+	color: rgb(78, 222, 70);
+	text-shadow: 2px 2px 6px rgba(13, 255, 0, 0.42);
+
+	background-color: transparent;
+	font-family: "Press Start 2P", sans-serif;
+}
+#send-email-header-container {
+	top: -20px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	text-align: center;
+}
+#send-email-header-container > .pixel,
+#send-email-box > .pixel {
+	color: rgb(78, 222, 70);
+	text-shadow: 2px 2px 6px rgba(13, 255, 0, 0.42);
+}
+#contactme-textarea {
+	color: white;
+	height: 100%;
+	width: 95%;
+	display: block;
+	resize: none;
+	color: rgb(78, 222, 70);
+	text-shadow: 2px 2px 6px rgba(13, 255, 0, 0.42);
+	border: none;
+	background-color: transparent;
+	padding: 0.3em;
+	font-family: "Press Start 2P", sans-serif;
+}
+#contactme-send-button {
+	padding: 0.2em;
+	display: inline-block;
+	justify-self: flex-end;
+	width: 50px;
+	height: 10%;
+	color: rgb(78, 222, 70);
+	border: 1px solid rgb(78, 222, 70);
+	background-color: transparent;
+	color: rgb(78, 222, 70);
+	text-shadow: 2px 2px 6px rgba(13, 255, 0, 0.42);
+	align-self: baseline;
+	justify-self: baseline;
+	position: relative;
+}
+#contactme-send-button:active {
+	border: 2px solid rgb(78, 222, 70);
+}
+#contactme-textarea-container {
+	/* he */
+	height: 90%;
+	margin-bottom: 0.4em;
+	display: flex;
+	/* padding-bottom: 1em; */
+	justify-items: baseline;
+	align-items: flex-end;
+	color: rgb(78, 222, 70);
+	text-shadow: 2px 2px 6px rgba(13, 255, 0, 0.42);
+}
+.hint-fix::placeholder {
+	color: rgb(78, 222, 70);
+}
+#contactme-send-button-contianer {
+	width: 90px;
+}
+/* #body-header {
+	display: block;
+} */
+@media screen and (min-width: 1000px) {
+	#send-email-box {
+		background-image: url("../res/email-screen.png");
+		width: 960px;
+		height: 720px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#send-email-container {
+		margin: 0;
+		margin-top: 2em;
+	}
+	#send-email-box {
+		background-image: url("../res/email-screen-high.png");
+		width: 400px;
+		height: 625px;
+	}
+	#contactme-textarea-container {
+		height: 40%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#contactme {
+		padding: 0em;
+	}
+	#send-email-box {
+		width: 360px;
+		height: 562.5px;
+		background-image: url("../res/email-screen-high.png");
+	}
+	#contactme-textarea-container {
+		height: 50%;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	#contactme {
+		padding: 0em;
+	}
+	#send-email-box {
+		width: 320px;
+		height: 500px;
+		background-image: url("../res/email-screen-high.png");
+	}
+	#contactme-textarea-container {
+		height: 20%;
+	}
+}
