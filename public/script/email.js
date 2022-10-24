@@ -82,24 +82,24 @@ let sendQuickEmail = (request) =>
 		headers: {
 			"Content-Type": "application/json",
 			"Access-Control-Allow-Origin": "*",
-			"Content-Type": "text/plain",
 		},
 		body: JSON.stringify({ toEmail: request.email }),
 	}).then((response) => response.json());
 let sendFullEmail = (toEmailVal, subjectVal, bodyVal) =>
-	fetch("https://kaliham-emailing-service-PROD.up.railway.app/full-email", {
+	fetch("https://kaliham-emailing-service-PROD.up.railway.app/text-email", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
 			"Access-Control-Allow-Origin": "*",
-			"Content-Type": "text/plain",
 		},
 		body: JSON.stringify({
 			toEmail: toEmailVal,
 			body: bodyVal,
 			subject: subjectVal,
 		}),
-	}).then((response) => response.json());
+	})
+		.then((response) => response.json())
+		.catch((err) => showSnackBar(err));
 
 let showSnackBar = (text) => {
 	let snackbar = document.getElementById("snackbar");
