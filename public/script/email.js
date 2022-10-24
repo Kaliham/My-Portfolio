@@ -10,8 +10,8 @@ $("#quick-email-btn").click(() => {
 	validateEmail(emailVal)
 		.then((request) => trim(request))
 		.then((request) => sendQuickEmail(request))
-		.then((data) => handleEmailSentResponse(data));
-	// .catch((msg) => showSnackBar(msg));
+		.then((data) => handleEmailSentResponse(data))
+		.catch((msg) => showSnackBar(msg));
 });
 $("#contactme-send-button").click(() => {
 	let emailVal = $("#full-email-email").val();
@@ -81,6 +81,8 @@ let sendQuickEmail = (request) =>
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
+			"Access-Control-Allow-Origin": "*",
+			"Content-Type": "text/plain",
 		},
 		body: JSON.stringify({ toEmail: request.email }),
 	}).then((response) => response.json());
@@ -89,6 +91,8 @@ let sendFullEmail = (toEmailVal, subjectVal, bodyVal) =>
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
+			"Access-Control-Allow-Origin": "*",
+			"Content-Type": "text/plain",
 		},
 		body: JSON.stringify({
 			toEmail: toEmailVal,
