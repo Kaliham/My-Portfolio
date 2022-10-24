@@ -77,7 +77,7 @@ let handleEmailSentResponse = (data) => {
 	}
 };
 let sendQuickEmail = (request) =>
-	fetch("/quick-email", {
+	fetch("https://kaliham-emailing-service-PROD.up.railway.app/quick-email", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
@@ -85,7 +85,7 @@ let sendQuickEmail = (request) =>
 		body: JSON.stringify({ toEmail: request.email }),
 	}).then((response) => response.json());
 let sendFullEmail = (toEmailVal, subjectVal, bodyVal) =>
-	fetch("/full-email", {
+	fetch("https://kaliham-emailing-service-PROD.up.railway.app/full-email", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
