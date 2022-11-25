@@ -1,89 +1,306 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Omar Ibrahim | Your Favorite SDE</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link href="./vendor/fontawesome/css/all.min.css" rel="stylesheet" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/header-anim.css" />
+		<link rel="stylesheet" href="css/about.css" />
+		<link rel="stylesheet" href="css/skills.css" />
+		<link rel="stylesheet" href="css/hamburger.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/contactme.css" />
+		<link rel="stylesheet" href="css/projects.css" />
+		<link rel="stylesheet" href="css/snackbar.css" />
+		<script
+			language="JavaScript"
+			type="text/javascript"
+			src="script/scroll.js"
+		></script>
+		<script src="script/typewriter.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav-bar">
+				<a href="#" class="scroll-reset"
+					><img
+						src="
+					https://firebasestorage.googleapis.com/v0/b/kaliham-portfolio.appspot.com/o/logo.png?alt=media&token=5b3e3931-b90a-4b8a-8f59-f9835a80ecbe"
+						alt=""
+						class="logo"
+				/></a>
+				<ul class="normal-list">
+					<li>
+						<a href="#aboutme">About Me</a>
+						<span>|</span>
+					</li>
+					<li><a href="#skills">Skills</a><span>|</span></li>
+					<li><a href="#projects">Projects</a><span>|</span></li>
+					<li><a href="#contactme">Contact Me</a></li>
+				</ul>
+				<div class="menu-btn">
+					<div class="menu-btn-burger"></div>
+				</div>
+			</nav>
+		</header>
+		<ul class="hamburger-list">
+			<li>
+				<a class="toggle-open" href="#aboutme">About Me</a>
+			</li>
+			<li><a class="toggle-open" href="#skills">Skills</a></li>
+			<li><a class="toggle-open" href="#projects">Projects</a></li>
+			<li><a class="toggle-open" href="#contactme">Contact Me</a></li>
+		</ul>
+		<div id="intro-container">
+			<!-- <div id="block"></div> -->
+			<div id="setup-img-container">
+				<!-- <img id="setup-img" src="res/setup.svg" /> -->
+			</div>
+			<article id="intro-atricle">
+				<h1 id="title-name">Omar Ibrahim</h1>
+				<h1 id="title-title">Software Developer></h1>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.12.1/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.12.1/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.12.1/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+				<br />
+				<p id="title-description">
+					Computer Science Graduate, Interested in Software Engineering,
+					Software architecture, And FullStack/Backend Development
+				</p>
+				<a
+					class="btn"
+					href="res/Resume.pdf"
+					target="_blank"
+					rel="noopener noreferrer"
+					download="Omar Taher Ibrahim - Resume.pdf"
+				>
+					<i class="fa fa-download"></i> Download Resume
+				</a>
+				<a class="btn" href="#aboutme">Read more</a>
+			</article>
+			<article id="intro-bottom">
+				<h2 id="title-title-bot" class="subtitle">Software Developer</h2>
+				<h1 id="title-name-bot">Omar Ibrahim</h1>
+			</article>
+		</div>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+		<section id="aboutme">
+			<h2 id="about-title" class="section-title">About Me</h2>
+			<p id="about-description">
+				Hey, I am Omar Taher, Computer Science graduate Interested in Software
+				Engineering, Software Architecture, Design Patterns, Backend/FullStack
+				Development, Mobile Development, and Microservices. Looking for
+				opportunities to build Impactful software with a team passionate about
+				software, and working on software with clean well-thought out
+				processes.<br /><br />
+				I have experience interning at <b>Amazon</b>, <b>PwC</b>, and
+				<b>EHS.com.jo</b> . These amazing experiences helped me improve my
+				technical, and soft skills, and working on real software gave me a
+				robust foundation in software development. Keeping an Eye on trendy and
+				new cutting edge technologies, while still focusing on reliable and
+				clean software. The thing I keep my eye on the most while looking for
+				opportunities is learning and growth.
+				<br />
+				<br />
+				<a
+					class="btn"
+					href="res/Resume.pdf"
+					target="_blank"
+					rel="noopener noreferrer"
+					download="Omar Taher Ibrahim - Resume.pdf"
+				>
+					<i class="fa fa-download"></i> Download Resume
+				</a>
+			</p>
+		</section>
+		<section>
+			<br id="skills" />
+			<br />
+			<br />
+			<h2 class="section-title" id="skills-title">Skills</h2>
+			<div class="skill-info-container">
+				<ul class="skills-container">
+					<li class="skill-container" onclick="" data-index="0">
+						<img src="res/logos/spring.png" alt="spring" class="skill-logo" />
+						<h3 class="skill-title">Spring Boot</h3>
+					</li>
+					<li class="skill-container" onclick="" data-index="1">
+						<img src="res/logos/Java.png" alt="Java" class="skill-logo" />
+						<h3 class="skill-title">Java</h3>
+					</li>
+					<li class="skill-container" onclick="" data-index="2">
+						<img src="res/logos/nodejs.png" alt="Nodejs" class="skill-logo" />
+						<h3 class="skill-title">Nodejs</h3>
+					</li>
+					<li class="skill-container" onclick="" data-index="3">
+						<img src="res/logos/csharp.png" alt="C#" class="skill-logo" />
+						<h3 class="skill-title">C#</h3>
+					</li>
+					<li class="skill-container" onclick="" data-index="4">
+						<img src="res/logos/database.png" alt="MySQL" class="skill-logo" />
+						<h3 class="skill-title">MySQL</h3>
+					</li>
+					<li class="skill-container" onclick="" data-index="5">
+						<img
+							src="res/logos/database.png"
+							alt="PostgreSQL"
+							class="skill-logo"
+						/>
+						<h3 class="skill-title">Postgre SQL</h3>
+					</li>
+					<li class="skill-container" onclick="" data-index="6">
+						<img src="res/logos/aws.png" alt="AWS" class="skill-logo" />
+						<h3 class="skill-title">AWS</h3>
+					</li>
+					<li class="skill-container" onclick="" data-index="7">
+						<img src="res/logos/Git.png" alt="Git" class="skill-logo" />
+						<h3 class="skill-title">Git</h3>
+					</li>
+					<li class="skill-container" onclick="" data-index="8">
+						<img src="res/logos/JS.png" alt="JS" class="skill-logo" />
+						<h3 class="skill-title">JS</h3>
+					</li>
+					<li class="skill-container" onclick="" data-index="9">
+						<img src="res/logos/Dart.png" alt="Dart" class="skill-logo" />
+						<h3 class="skill-title">Dart</h3>
+					</li>
+					<li class="skill-container" onclick="" data-index="10">
+						<img src="res/logos/flutter.png" alt="Flutter" class="skill-logo" />
+						<h3 class="skill-title">Flutter</h3>
+					</li>
+					<li class="skill-container" onclick="" data-index="11">
+						<img src="res/logos/mongoDB.png" alt="mongoDB" class="skill-logo" />
+						<h3 class="skill-title">mongoDB</h3>
+					</li>
+					<li class="skill-container" onclick="" data-index="12">
+						<img
+							src="res/logos/unixshell.png"
+							alt="Unix Shell"
+							class="skill-logo"
+						/>
+						<h3 class="skill-title">Unix Shell</h3>
+					</li>
+					<li class="skill-container" onclick="" data-index="13">
+						<img src="res/logos/unixshell.png" alt="ZSH" class="skill-logo" />
+						<h3 class="skill-title">ZSH</h3>
+					</li>
+					<li class="skill-container" onclick="" data-index="14">
+						<img src="res/logos/unixshell.png" alt="vim" class="skill-logo" />
+						<h3 class="skill-title">vim</h3>
+					</li>
+				</ul>
+				<div id="info-skill">
+					<p id="skill-info">
+						Click the icons of A skill to continue...<span
+							id="blinking-skill-info"
+						></span>
+					</p>
+				</div>
+			</div>
+			<br />
+			<p>
+				<br />
+			</p>
+		</section>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+		<section id="projects">
+			<h2 class="section-title">Projects</h2>
+			<article>
+				<img class="under-const-img" src="res/img/warning-sign.png" />
+				<h3 class="under-const-h3">UNDER CONSTRUCTION</h3>
+			</article>
+		</section>
+		<article class="under-const-additional">
+			<a
+				target="_blank"
+				rel="noopener noreferrer"
+				href="https://github.com/Kaliham"
+				class="under-const-a"
+			>
+				<img src="res/img/github.png" class="under-const-img" />
+				<h3 class="under-const-h3">Click me!</h3>
+			</a>
+		</article>
+		<section id="contactme">
+			<h2 id="contactme-title" class="section-title">Contact Me</h2>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+			<div id="send-email-container">
+				<div id="send-email-box">
+					<div id="send-email-header-container">
+						<h3 class="pixel">Send an Email!</h3>
+					</div>
+					<h3 class="pixel">Email:</h3>
+					<input
+						class="contactme-input-fields hint-fix"
+						type="email"
+						name="email"
+						placeholder="Enter your Email!"
+						id="full-email-email"
+					/>
+					<h3 class="pixel">Subject:</h3>
+
+					<input
+						class="contactme-input-fields hint-fix"
+						type="text"
+						name="email"
+						placeholder="Enter Subject Of Email!"
+						id="full-email-subject"
+					/>
+					<h3 id="body-header" class="pixel">Body:</h3>
+					<br />
+					<div id="contactme-textarea-container">
+						<textarea
+							class="hint-fix"
+							type=""
+							name="Body"
+							id="contactme-textarea"
+							placeholder="Enter Text here..."
+						></textarea>
+						<div id="contactme-send-button-contianer">
+							<button id="contactme-send-button" onclick="">
+								<i class="fas fa-paper-plane"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<form action="" method="post"></form>
+			</div>
+		</section>
+		<section id="funfacts"></section>
+		<footer>
+			<ul class="footer-container">
+				<li>
+					<h3 class="footer-text">
+						<i class="far fa-envelope"></i> Email: <br />
+					</h3>
+					<p id="email-to-p">OmarTaherIbrahim@gmail.com</p>
+				</li>
+				<li class="footer-email-container">
+					<h3 class="footer-text">Send a quick email:</h3>
+					<div class="email-container">
+						<input
+							type="email"
+							name="email"
+							id="quick-email-input"
+							placeholder="Enter Email to setup!"
+						/>
+						<button class="email-send-button" id="quick-email-btn">
+							<i class="fas fa-paper-plane"></i>
+						</button>
+					</div>
+				</li>
+				<li id="footer-watermark">
+					<h3 class="footer-text">Your Favorite SDE</h3>
+					<img src="res/logo.png" alt="Your Favorite SDE" />
+				</li>
+			</ul>
+		</footer>
+		<!-- The actual snackbar -->
+		<div id="snackbar">Some text some message..</div>
+		<script src="script/burger.js"></script>
+		<script src="script/email.js"></script>
+	</body>
 </html>

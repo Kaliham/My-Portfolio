@@ -23,7 +23,10 @@
 #title-title-bot {
 	font-family: "Press Start 2P", sans-serif;
 }
-
+#title-title-bot {
+	color: #fff3f6;
+	text-shadow: 2px 2px 20px#eebcbc;
+}
 #intro-atricle {
 	height: 100vh;
 	width: 100%;

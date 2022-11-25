@@ -10,8 +10,8 @@ $("#quick-email-btn").click(() => {
 	validateEmail(emailVal)
 		.then((request) => trim(request))
 		.then((request) => sendQuickEmail(request))
-		.then((data) => handleEmailSentResponse(data));
-	// .catch((msg) => showSnackBar(msg));
+		.then((data) => handleEmailSentResponse(data))
+		.catch((msg) => showSnackBar(msg));
 });
 $("#contactme-send-button").click(() => {
 	let emailVal = $("#full-email-email").val();
@@ -77,25 +77,29 @@ let handleEmailSentResponse = (data) => {
 	}
 };
 let sendQuickEmail = (request) =>
-	fetch("/quick-email", {
+	fetch("https://kaliham-emailing-service-PROD.up.railway.app/quick-email", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
+			"Access-Control-Allow-Origin": "*",
 		},
 		body: JSON.stringify({ toEmail: request.email }),
 	}).then((response) => response.json());
 let sendFullEmail = (toEmailVal, subjectVal, bodyVal) =>
-	fetch("/full-email", {
+	fetch("https://kaliham-emailing-service-PROD.up.railway.app/text-email", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
+			"Access-Control-Allow-Origin": "*",
 		},
 		body: JSON.stringify({
 			toEmail: toEmailVal,
 			body: bodyVal,
 			subject: subjectVal,
 		}),
-	}).then((response) => response.json());
+	})
+		.then((response) => response.json())
+		.catch((err) => showSnackBar(err));
 
 let showSnackBar = (text) => {
 	let snackbar = document.getElementById("snackbar");
