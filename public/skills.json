@@ -1,0 +1,130 @@
+[
+  {
+    "title": "Spring Boot",
+    "skills": [
+      "• Work Experience at Amazon",
+      "• Spring JPA",
+      "• Spring Security",
+      "• Reactive Spring",
+      "• Spring MVC",
+      "• Spring Injections and patterns",
+      "• REST API",
+      "• Lombok",
+      "• Spring Testing/JUnit 5"
+    ]
+  },
+  {
+    "title": "Java",
+    "skills": [
+      "• OOP",
+      "• Multithreading",
+      "• JDBC",
+      "• Functional Programming",
+      "• Streams",
+      "• Maven"
+    ]
+  },
+  {
+    "title": "NodeJS ",
+    "skills": [
+      "• Express.js ",
+      "• Middleware",
+      "• RESTAPIs",
+      "• Axios",
+      "• MongoDB",
+      "• Sockets.IO",
+      "• Yarn",
+      "• Setting up a discord bot."
+    ]
+  },
+  {
+    "title": "C# ",
+    "skills": [
+      "• ASP.Net ",
+      "• Entity Framework",
+      "• Work Experience at EHS.com.jo"
+    ]
+  },
+  {
+    "title": "MySQL",
+    "skills": ["• Join", "• nested statements", "• aggregation", "• ordering"]
+  },
+  {
+    "title": "PostgreSQL",
+    "skills": ["• Join", "• nested statements", "• aggregation", "• ordering"]
+  },
+  {
+    "title": "AWS",
+    "skills": [
+      "• EC2 Containers",
+      "• Setting up VPC",
+      "• AWS Elastic IPs ",
+      "• setting up a NAT"
+    ]
+  },
+  {
+    "title": "git",
+    "skills": [
+      "• git pull",
+      "• git commit",
+      "• merging/pull request",
+      "• resloving conflict",
+      "• branching"
+    ]
+  },
+  {
+    "title": "Javascript",
+    "skills": [
+      "• Async, promises",
+      "• ES6",
+      "• Jquery",
+      "• DOM elements",
+      "• functional programming"
+    ]
+  },
+  {
+    "title": "Dart",
+    "skills": ["• Async", "• Streams", "• functional programming"]
+  },
+  {
+    "title": "Flutter",
+    "skills": [
+      "• Working with google maps",
+      "• BLoC",
+      "• Providers",
+      "• Firebase",
+      "• GetIt(Service Locator Pattern)",
+      "• Flutter hooks"
+    ]
+  },
+  {
+    "title": "mongoDB",
+    "skills": [
+      "• Setting DB using atlas cloud platform",
+      "• Reactive mongoDB",
+      "• connecting to 1. Spring2. Node.jsDjango"
+    ]
+  },
+  {
+    "title": "Unix Shell",
+    "skills": [
+      "• Basic unix commands",
+      "• Ubunto Package Manger",
+      "• Bash Script",
+      "• Brew macos Package manger",
+      "• tmux"
+    ]
+  },
+  { "title": "ZSH", "skills": ["• Setting up .zshrc", "• ohmyzsh"] },
+  {
+    "title": "neovim",
+    "skills": [
+      "• setting up .vimrc",
+      "• proficient in shortcuts",
+      "• lua plugins",
+      "• lua scripting",
+      "• Experience with neoVim",
+      "• vim script to execute code."
+    ]
+  }
+]
