@@ -4,9 +4,10 @@
     "skills": [
       "• TCP Server",
       "• UDP Server",
-      "• Websockets",
       "• WebRTC - Live chat",
+      "• Websockets",
       "• Gorilla Mux",
+      "• Peer-to-peer Libp2p",
       "• Testing",
       "• Standard Library",
       "• Concurrency and Go Routines",
