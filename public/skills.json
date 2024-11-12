@@ -1,22 +1,5 @@
 [
   {
-    "title": "Go ",
-    "skills": [
-      "• TCP Server",
-      "• UDP Server",
-      "• WebRTC - Live chat",
-      "• Websockets",
-      "• Gorilla Mux",
-      "• Peer-to-peer Libp2p",
-      "• Testing",
-      "• Standard Library",
-      "• Concurrency and Go Routines",
-      "• Channels",
-      "• gRPC"
-    ]
-  },
-
-  {
     "title": "Spring Boot",
     "skills": [
       "• Work Experience at Amazon",
@@ -142,6 +125,22 @@
       "• lua scripting",
       "• Experience with neoVim",
       "• vim script to execute code."
+    ]
+  },
+  {
+    "title": "Go ",
+    "skills": [
+      "• TCP Server",
+      "• UDP Server",
+      "• WebRTC - Live chat",
+      "• Websockets",
+      "• Gorilla Mux",
+      "• Peer-to-peer Libp2p",
+      "• Testing",
+      "• Standard Library",
+      "• Concurrency and Go Routines",
+      "• Channels",
+      "• gRPC"
     ]
   }
 ]
