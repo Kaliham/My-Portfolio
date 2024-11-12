@@ -1,5 +1,22 @@
 [
   {
+    "title": "Go ",
+    "skills": [
+      "• TCP Server",
+      "• UDP Server",
+      "• WebRTC - Live chat",
+      "• Websockets",
+      "• Gorilla Mux",
+      "• Peer-to-peer Libp2p",
+      "• Testing",
+      "• Standard Library",
+      "• Concurrency and Go Routines",
+      "• Channels",
+      "• gRPC"
+    ]
+  },
+
+  {
     "title": "Spring Boot",
     "skills": [
       "• Work Experience at Amazon",
@@ -90,9 +107,9 @@
     "title": "Flutter",
     "skills": [
       "• Working with google maps",
-      "• BLoC",
-      "• Providers",
-      "• Firebase",
+      "• Mobx",
+      "• Providers & Riverpod",
+      "• Firebase & Supbase",
       "• GetIt(Service Locator Pattern)",
       "• Flutter hooks"
     ]
@@ -117,7 +134,7 @@
   },
   { "title": "ZSH", "skills": ["• Setting up .zshrc", "• ohmyzsh"] },
   {
-    "title": "neovim",
+    "title": "Neovim",
     "skills": [
       "• setting up .vimrc",
       "• proficient in shortcuts",
